@@ -1,0 +1,23 @@
+.rainbow-animation {
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: #6ccff6; }
+    25% { color: #3d80e4; }
+    50% { color: #ff8a5b; }
+    75% { color: #ff3b58; }
+    100% { color: #6ccff6; }
+}
+
+.glow-on-hover {
+    background: linear-gradient(45deg, #6ccff6, #3d80e4, #ff8a5b, #ff3b58);
+    background-size: 400% 400%;
+    animation: glow 15s ease infinite;
+}
+
+@keyframes glow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
